@@ -12,7 +12,7 @@ library (dplyr)
 library (readr)
 enade14 <- read_csv2 ("http://raw.githubusercontent.com/neylsoncrepalde/introducao_ao_r/master/dados/enade_2014_amostra.csv")
 ``` 
-*Mostre com um comando e usando um grafico a distribuição das idades dessa amostra de alunos que fizeram ENADE em 2014. Comente o resultado.*
+*Exibir com um comando e usar um gráfico A comparação entre a amostra de alunos que fizeram o ENADE em 2014. Comente o resultado.*
 A maior parte dos alunos possui idade entre 20 e 30 anos, sendo as menores entre 50 e 70 anos.
 ```{r}
 
@@ -22,7 +22,7 @@ hist(enade14$nu_idade, col = "#D8BFD8",
 
 ```
 
-*Monte uma tabela exibindo as porcentagens e os valores absolutos das proporções de alunos por cor/raça. O que descobrimos sobre isso?*
+*Monte uma tabela exibindo como porcentagens e os valores absolutos das proporções de alunos por COR / RAÇA. O descobrimos sobre isso?*
 A porcentagem de pessoas brancas se sobressai em quantidade significativa e a quantidade de indigenas e amarelos é visivelmente menor.
 
 ```{r}
@@ -40,7 +40,7 @@ freq(corRaca, col= "#F4D5c0",
      
 ```
 
-*Apresente a proporção de alunos casados e solteiros. Atenção, queremos apenas casados e solteiros. Exclua de sua analise os alunos que tiverem outro tipo de estado civil.*
+*Apresente uma proporção de alunos casados ​​e solteiros. Atenção, queremos apenas CASADOS e SOLTEIROS. Exclua as suas análises dos alunos que são um outro tipo de estado civil.*
 É possivel observar que a quantidade de alunos solteiros corresponde a mais de 50% do total.
 
 ```{r}
@@ -63,7 +63,7 @@ solteiros = enade14$qe_i1[enade14$qe_i1 == 'a' |
 freq(solteiros, plot = F, col = "#f5deb3")
 ```
 
-*Apresente estatísticas descritivas sobre a nota geral dos alunos no Enade. Apresente também a informação em um gráfico. Qual é o gráfico mais adequado para a visualização desta variável? Por quê? Comente sobre a nota geral. Os alunos parecem ter, no geral, um bom desempenho ou um mal desempenho?*
+*Apresente estatísticas descritivas sobre uma nota geral dos alunos no Enade. Apresente também uma informação em um gráfico. Qual é o gráfico mais adequado para um visto desta variável? Porque? Comente sobre a nota geral. Os alunos parecem ter um desempenho bom ou ruim?*
 A melhor forma de se visualizar estatisticas é o boxplot, pois ele permite visualizar os dados de maneira clara e, nesse caso, mostra uma media de notas baixa.
 
 
@@ -75,7 +75,7 @@ boxplot(enade14$nt_ger,
 ```
 
 
-*Crie uma variável binária chamada PUBLICA. Nessa variável, você deve marcar 1 se a universidade em que o aluno estudou foi pública e 0 se foi privada. ATENÇÃO: existe uma variável com a categoria administrativa da IES mas ela possui várias subclassificações. É preciso que você crie outra variável com as categorias corretas.*
+*Crie uma variável binária chamada PUBLICA. Nessa variável, você deve marcar 1 se a universidade em que o aluno estudou foi pública e 0 se foi privada. ATENÇÃO : existe uma variável com a categoria administrativa da IES mas ela possui várias subclassificações. É preciso que você crie outra variável com as categorias corretas..*
 A maior parte dos alunos se encontra em instituições privadas.
 
 ```{r}
@@ -105,7 +105,7 @@ freq (enade14$PUBLICA, col="#c2fee5",
      main = "Alunos de faculdades publicas e privadas")
 
 ```
-*Mostre a distribuição da renda para os alunos do ENADE 2014. Mostre também a distribuição de renda apenas para os alunos das escolas públicas e das escolas privadas.*
+*Exibir uma distribuição para os alunos do ENADE 2014. Exibir também o curso para participar das escolas públicas e das escolas privadas*
 mean of x mean of y 
 0.2099149 0.6980676 
 
