@@ -12,7 +12,8 @@ library (dplyr)
 library (readr)
 enade14 <- read_csv2 ("http://raw.githubusercontent.com/neylsoncrepalde/introducao_ao_r/master/dados/enade_2014_amostra.csv")
 ``` 
-*Exibir com um comando e usar um gráfico A comparação entre a amostra de alunos que fizeram o ENADE em 2014. Comente o resultado.*
+*Mostre com um comando e usando um gráfico a distribuição das idades dessa amostra de alunos que fizeram ENADE em 2014. Comente o resultado.*
+
 A maior parte dos alunos possui idade entre 20 e 30 anos, sendo as menores entre 50 e 70 anos.
 ```{r}
 
@@ -22,7 +23,7 @@ hist(enade14$nu_idade, col = "#D8BFD8",
 
 ```
 
-*Monte uma tabela exibindo como porcentagens e os valores absolutos das proporções de alunos por COR / RAÇA. O descobrimos sobre isso?*
+*Monte uma tabela exibindo as porcentagens e os valores absolutos das proporções de alunos por COR/RAÇA. O descobrimos sobre isso?*
 A porcentagem de pessoas brancas se sobressai em quantidade significativa e a quantidade de indigenas e amarelos é visivelmente menor.
 
 ```{r}
@@ -126,6 +127,7 @@ t.test (enade14$renda_priv, enade14$renda_pub)
 ```
 
 *Mostre agora a nota geral dos alunos das faculdades públicas e dos alunos das faculdades privadas. O que você acha desses dados?*
+
 Ele mostra medias consideravelmente distantes, o que pode ser um indicio de que o nivel de ensino/aproveitamento é diferente.
 
 ```{r}
