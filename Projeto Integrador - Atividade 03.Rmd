@@ -24,6 +24,7 @@ hist(enade14$nu_idade, col = "#D8BFD8",
 ```
 
 *Monte uma tabela exibindo as porcentagens e os valores absolutos das proporções de alunos por COR/RAÇA. O descobrimos sobre isso?*
+
 A porcentagem de pessoas brancas se sobressai em quantidade significativa e a quantidade de indigenas e amarelos é visivelmente menor.
 
 ```{r}
@@ -41,7 +42,8 @@ freq(corRaca, col= "#F4D5c0",
      
 ```
 
-*Apresente uma proporção de alunos casados ​​e solteiros. Atenção, queremos apenas CASADOS e SOLTEIROS. Exclua as suas análises dos alunos que são um outro tipo de estado civil.*
+*Apresente a proporção de alunos casados e solteiros. Atenção, queremos apenas CASADOS e SOLTEIROS. Exclua de sua análise os alunos que tiverem outro tipo de estado civil.*
+
 É possivel observar que a quantidade de alunos solteiros corresponde a mais de 50% do total.
 
 ```{r}
@@ -76,7 +78,8 @@ boxplot(enade14$nt_ger,
 ```
 
 
-*Crie uma variável binária chamada PUBLICA. Nessa variável, você deve marcar 1 se a universidade em que o aluno estudou foi pública e 0 se foi privada. ATENÇÃO : existe uma variável com a categoria administrativa da IES mas ela possui várias subclassificações. É preciso que você crie outra variável com as categorias corretas..*
+*Crie uma variável binária chamada PUBLICA. Nessa variável, você deve marcar 1 se a universidade em que o aluno estudou foi pública e 0 se foi privada. ATENÇÃO : existe uma variável com a categoria administrativa da IES mas ela possui várias subclassificações. É preciso que você crie outra variável com as categorias corretas.
+
 A maior parte dos alunos se encontra em instituições privadas.
 
 ```{r}
@@ -106,7 +109,8 @@ freq (enade14$PUBLICA, col="#c2fee5",
      main = "Alunos de faculdades publicas e privadas")
 
 ```
-*Exibir uma distribuição para os alunos do ENADE 2014. Exibir também o curso para participar das escolas públicas e das escolas privadas*
+*Mostre a distribuição da renda para os alunos do ENADE 2014. Mostre também a distribuição de renda apenas para os alunos das escolas públicas e das escolas privadas.*
+
 mean of x mean of y 
 0.2099149 0.6980676 
 
